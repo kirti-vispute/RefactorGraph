@@ -1,0 +1,8 @@
+{
+  "long_method_statements": 15,
+  "god_class_method_count": 10,
+  "god_class_loc": 192,
+  "feature_envy_min_external_calls": 3,
+  "god_class_min_fields": 1,
+  "god_class_min_methods_for_field_branch": 3
+}

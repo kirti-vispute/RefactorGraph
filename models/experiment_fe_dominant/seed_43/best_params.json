@@ -1,0 +1,13 @@
+{
+  "heads": 2,
+  "hidden_dim": 64,
+  "dropout": 0.17398643948403172,
+  "lr": 0.0030751717711701653,
+  "weight_decay": 0.0023641951027942375,
+  "weight_lm": 1.0,
+  "weight_fe": 2.364285288139882,
+  "weight_gc": 1.1102988582129414,
+  "class_method_pool": true,
+  "best_epoch": 79,
+  "seed": 43
+}

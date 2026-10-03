@@ -1,0 +1,59 @@
+# Source repositories for RefactorGraph dataset construction.
+# Selection criteria: real, permissively-licensed (MIT/BSD/Apache-2.0), mostly
+# pure-Python, mix of project sizes for structural diversity, repo-level split
+# fixed here BEFORE any labeling/training to prevent leakage.
+#
+# No commit is pinned by guessed tag name (avoids fabricating a tag that may
+# not exist). download_repos.py shallow-clones the current default branch and
+# records the exact resolved commit SHA into repos.lock.yaml for reproducibility.
+
+train:
+  - name: click
+    url: https://github.com/pallets/click.git
+    license: BSD-3-Clause
+  - name: black
+    url: https://github.com/psf/black.git
+    license: MIT
+  - name: httpx
+    url: https://github.com/encode/httpx.git
+    license: BSD-3-Clause
+  - name: gunicorn
+    url: https://github.com/benoitc/gunicorn.git
+    license: MIT
+  - name: flask
+    url: https://github.com/pallets/flask.git
+    license: BSD-3-Clause
+  - name: tornado
+    url: https://github.com/tornadoweb/tornado.git
+    license: Apache-2.0
+  - name: requests
+    url: https://github.com/psf/requests.git
+    license: Apache-2.0
+  - name: scrapy
+    url: https://github.com/scrapy/scrapy.git
+    license: BSD-3-Clause
+  - name: pytest
+    url: https://github.com/pytest-dev/pytest.git
+    license: MIT
+
+val:
+  - name: sqlalchemy
+    url: https://github.com/sqlalchemy/sqlalchemy.git
+    license: MIT
+  - name: starlette
+    url: https://github.com/encode/starlette.git
+    license: BSD-3-Clause
+  - name: sphinx
+    url: https://github.com/sphinx-doc/sphinx.git
+    license: BSD-2-Clause
+
+test:
+  - name: django
+    url: https://github.com/django/django.git
+    license: BSD-3-Clause
+  - name: pandas
+    url: https://github.com/pandas-dev/pandas.git
+    license: BSD-3-Clause
+  - name: celery
+    url: https://github.com/celery/celery.git
+    license: BSD-3-Clause

@@ -1,0 +1,11 @@
+pyyaml
+tqdm
+torch==2.11.0
+torch-geometric==2.8.0.post1
+scikit-learn==1.8.0
+joblib==1.5.3
+transformers==5.15.1
+optuna==4.9.0
+pandas==2.3.2
+fastapi
+uvicorn[standard]
