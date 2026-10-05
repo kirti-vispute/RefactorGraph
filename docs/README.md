@@ -111,3 +111,11 @@ The frontend production-dependency audit reported zero vulnerabilities.
 The full audit reported a high-severity advisory for `undici@7.29.0`,
 which is pulled in by the `jsdom` development/test dependency. No
 dependency versions were changed during this documentation pass.
+
+The subsequent security maintenance pass on 5 October 2026 resolved
+that advisory by updating only the lockfile entry for `undici` from
+7.29.0 to 7.29.1, within the version range already allowed by `jsdom`.
+A fresh `npm ci` from a Git export passed all 25 frontend tests, lint,
+and the production build. The full dependency audit then reported zero
+vulnerabilities. Application source, model files, live thresholds, and
+historical evaluation artifacts were unchanged.
