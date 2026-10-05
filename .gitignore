@@ -19,11 +19,12 @@ build/
 .claude/
 .chart-data-*/
 .poster_beautify/
-scratch_external_eval/
-models/
+/scratch_external_eval/*
+!/scratch_external_eval/graph_builder_dominant_ext.py
+/models/
 AML_Project_Summary.docx
 docs/*.json
 docs/label_review_sample.md
 scripts/create_project_summary_doc.js
-package.json
-package-lock.json
+/package.json
+/package-lock.json
